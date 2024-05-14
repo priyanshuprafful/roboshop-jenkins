@@ -1,10 +1,16 @@
 variable "folders" {
-  default = ["Infra"]
+  default = ["Infra" , "CI-Pipeline"]
 }
 
 variable "jobs" {
   default = [
-    { name = "roboshop" , folder = "Infra" , repo_url = "https://github.com/priyanshuprafful/roboshop-infra"}
+    { name = "roboshop" , folder = "Infra" , repo_url = "https://github.com/priyanshuprafful/roboshop-infra"},
+    { name = "frontend" , folder = "CI-Pipeline" , repo_url = "https://github.com/priyanshuprafful/roboshop-infra"},
+    { name = "catalogue" , folder = "CI-Pipeline" , repo_url = "https://github.com/priyanshuprafful/roboshop-infra"},
+    { name = "payment" , folder = "CI-Pipeline" , repo_url = "https://github.com/priyanshuprafful/roboshop-infra"},
+    { name = "shipping" , folder = "CI-Pipeline" , repo_url = "https://github.com/priyanshuprafful/roboshop-infra"},
+    { name = "user" , folder = "CI-Pipeline" , repo_url = "https://github.com/priyanshuprafful/roboshop-infra"},
+    { name = "cart" , folder = "CI-Pipeline" , repo_url = "https://github.com/priyanshuprafful/roboshop-infra"}
   ]
 
 }
