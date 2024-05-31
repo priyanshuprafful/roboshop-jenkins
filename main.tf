@@ -14,9 +14,9 @@ resource "jenkins_job" "job" {
     name = lookup(element(var.jobs, count.index) , "name" , null )
   })
 
-#  lifecycle {
-#    ignore_changes = [template]
-#  }
+  lifecycle {
+    ignore_changes = [template]
+  }
 }
 
 data "aws_instance" "jenkins" {
