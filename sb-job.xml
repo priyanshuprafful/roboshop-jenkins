@@ -3,7 +3,7 @@
     <actions>
         <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition"/>
         <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition">
-            <jobProperties/> 
+            <jobProperties/>
             <triggers/>
             <parameters/>
             <options/>
