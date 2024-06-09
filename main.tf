@@ -40,8 +40,8 @@ data "aws_instance" "jenkins" {
 }
 
 resource "aws_route53_record" "www" {
-  zone_id = "Z05260162XS3U1UPP64CC"
-  name    = "jenkins.saraldevops.online"
+  zone_id = "Z07013421USQO5ED15QGP" //  "Z05260162XS3U1UPP64CC"
+  name    = "jenkins.saraldevops.site"
   type    = "A"
   ttl     = 30
   records = [data.aws_instance.jenkins.public_ip]
